@@ -289,7 +289,7 @@ GEM
       faraday (~> 2.0)
     ffi (1.15.5)
     formatador (0.3.0)
-    fugit (1.8.1)
+    fugit (1.9.0)
       et-orbi (~> 1, >= 1.2.7)
       raabro (~> 1.4)
     fuzzy-string-match (1.0.1)
@@ -556,7 +556,7 @@ GEM
     redcarpet (3.6.0)
     redis (5.0.7)
       redis-client (>= 0.9.0)
-    redis-client (0.17.0)
+    redis-client (0.18.0)
       connection_pool
     regexp_parser (2.8.1)
     reline (0.3.8)
@@ -649,12 +649,12 @@ GEM
       railties (>= 5.2)
       semantic_range (>= 2.3.0)
     shellany (0.0.1)
-    sidekiq (7.1.4)
+    sidekiq (7.2.0)
       concurrent-ruby (< 2)
       connection_pool (>= 2.3.0)
       rack (>= 2.2.4)
       redis-client (>= 0.14.0)
-    sidekiq-cron (1.10.1)
+    sidekiq-cron (1.11.0)
       fugit (~> 1.8)
       globalid (>= 1.0.1)
       sidekiq (>= 6)
@@ -839,7 +839,7 @@ DEPENDENCIES
   selectize-rails!
   shakapacker (= 7.1.0)
   sidekiq
-  sidekiq-cron
+  sidekiq-cron (>= 1.11.0)
   simple_form
   simplecov
   simplecov-lcov
