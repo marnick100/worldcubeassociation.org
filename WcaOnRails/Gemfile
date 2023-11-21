@@ -106,7 +106,7 @@ gem 'sidekiq-cron'
 group :development, :test do
   gem 'spring'
   gem 'spring-commands-rspec'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 6.0.4'
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'capybara-screenshot'
