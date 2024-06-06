@@ -98,7 +98,7 @@ gem 'icalendar'
 # pointing to our fork which has Rails 7 support enabled (aka monkey-patched)
 gem 'starburst', github: 'thewca/starburst'
 gem 'react-rails'
-gem 'sprockets-rails'
+gem 'sprockets-rails', '>= 3.5.0'
 gem 'fuzzy-string-match'
 gem 'sidekiq'
 gem 'sidekiq-cron'
