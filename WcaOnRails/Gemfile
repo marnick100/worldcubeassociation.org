@@ -101,7 +101,7 @@ gem 'react-rails'
 gem 'sprockets-rails'
 gem 'fuzzy-string-match'
 gem 'sidekiq'
-gem 'sidekiq-cron'
+gem 'sidekiq-cron', '>= 1.11.0'
 
 group :development, :test do
   gem 'spring'
