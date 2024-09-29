@@ -1,4 +1,4 @@
-FROM ruby:3.2.2
+FROM ruby:bookworm
 EXPOSE 3000
 
 ENV DEBIAN_FRONTEND noninteractive
