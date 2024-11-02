@@ -165,7 +165,7 @@ GEM
     babel-transpiler (0.7.0)
       babel-source (>= 4.0, < 6)
       execjs (~> 2.0)
-    base64 (0.1.1)
+    base64 (0.2.0)
     bcrypt (3.1.18)
     better_errors (2.10.1)
       erubi (>= 1.0.0)
@@ -215,7 +215,8 @@ GEM
     carrierwave-aws (1.6.0)
       aws-sdk-s3 (~> 1.0)
       carrierwave (>= 2.0, < 4)
-    childprocess (4.1.0)
+    childprocess (5.1.0)
+      logger (~> 1.5)
     chunky_png (1.4.0)
     cldr-plurals-runtime-rb (1.1.0)
     cocoon (1.2.15)
@@ -376,7 +377,7 @@ GEM
     jmespath (1.6.2)
     js_cookie_rails (2.2.0)
       railties (>= 3.1)
-    json (2.6.3)
+    json (2.7.5)
     json-schema (4.1.1)
       addressable (>= 2.8)
     jwt (2.7.1)
@@ -402,6 +403,7 @@ GEM
     listen (3.6.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
+    logger (1.6.1)
     loofah (2.21.3)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -472,12 +474,12 @@ GEM
     openssl (3.2.0)
     orm_adapter (0.5.0)
     os (1.1.4)
-    overcommit (0.60.0)
-      childprocess (>= 0.6.3, < 5)
+    overcommit (0.64.1)
+      childprocess (>= 0.6.3, < 6)
       iniparse (~> 1.4)
-      rexml (~> 3.2)
-    parallel (1.23.0)
-    parser (3.2.2.3)
+      rexml (>= 3.3.9)
+    parallel (1.26.3)
+    parser (3.3.5.1)
       ast (~> 2.4.1)
       racc
     premailer (1.18.0)
@@ -495,7 +497,7 @@ GEM
       stringio
     public_suffix (5.0.3)
     raabro (1.4.0)
-    racc (1.7.1)
+    racc (1.8.1)
     rack (2.2.8)
     rack-cors (2.0.1)
       rack (>= 2.0.0)
@@ -558,7 +560,7 @@ GEM
       redis-client (>= 0.9.0)
     redis-client (0.17.0)
       connection_pool
-    regexp_parser (2.8.1)
+    regexp_parser (2.9.2)
     reline (0.3.8)
       io-console (~> 0.5)
     representable (3.2.0)
@@ -574,7 +576,7 @@ GEM
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
     retriable (3.1.2)
-    rexml (3.2.6)
+    rexml (3.3.9)
     rotp (6.2.0)
     rouge (4.1.2)
     rqrcode (2.2.0)
@@ -604,20 +606,18 @@ GEM
     rspec-retry (0.6.2)
       rspec-core (> 3.3)
     rspec-support (3.12.0)
-    rubocop (1.56.4)
-      base64 (~> 0.1.1)
+    rubocop (1.68.0)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
-      parser (>= 3.2.2.3)
+      parser (>= 3.3.0.2)
       rainbow (>= 2.2.2, < 4.0)
-      regexp_parser (>= 1.8, < 3.0)
-      rexml (>= 3.2.5, < 4.0)
-      rubocop-ast (>= 1.28.1, < 2.0)
+      regexp_parser (>= 2.4, < 3.0)
+      rubocop-ast (>= 1.32.2, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 3.0)
-    rubocop-ast (1.29.0)
-      parser (>= 3.2.1.0)
+    rubocop-ast (1.33.0)
+      parser (>= 3.3.1.0)
     ruby-ll (2.1.2)
       ansi
       ast
@@ -716,7 +716,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.6)
-    unicode-display_width (2.4.2)
+    unicode-display_width (2.6.0)
     unicorn (6.1.0)
       kgio (~> 2.6)
       raindrops (~> 0.7)
@@ -817,7 +817,7 @@ DEPENDENCIES
   octokit
   oga
   openssl
-  overcommit
+  overcommit (>= 0.64.1)
   premailer-rails
   rack-cors
   rails
@@ -832,7 +832,7 @@ DEPENDENCIES
   rqrcode
   rspec-rails
   rspec-retry
-  rubocop
+  rubocop (>= 1.66.0)
   sass-rails
   sdoc
   seedbank

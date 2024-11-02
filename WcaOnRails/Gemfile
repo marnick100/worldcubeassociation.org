@@ -122,8 +122,8 @@ group :development, :test do
 end
 
 group :development do
-  gem 'overcommit', require: false
-  gem 'rubocop', require: false
+  gem 'overcommit', '>= 0.64.1', require: false
+  gem 'rubocop', '>= 1.66.0', require: false
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'bullet'
