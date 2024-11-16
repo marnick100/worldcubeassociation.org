@@ -9,7 +9,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'rails'
-gem 'rails-i18n'
+gem 'rails-i18n', '>= 8.0.0'
 gem 'i18n-js'
 gem 'activerecord-import'
 gem 'sass-rails'
@@ -101,7 +101,7 @@ gem 'react-rails'
 gem 'sprockets-rails'
 gem 'fuzzy-string-match'
 gem 'sidekiq'
-gem 'sidekiq-cron'
+gem 'sidekiq-cron', '>= 2.0.0'
 
 group :development, :test do
   gem 'spring'
