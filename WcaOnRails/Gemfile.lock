@@ -469,7 +469,7 @@ GEM
     oga (3.4)
       ast
       ruby-ll (~> 2.1)
-    openssl (3.2.0)
+    openssl (3.3.0)
     orm_adapter (0.5.0)
     os (1.1.4)
     overcommit (0.60.0)
@@ -816,7 +816,7 @@ DEPENDENCIES
   oauth2
   octokit
   oga
-  openssl
+  openssl (>= 3.3.0)
   overcommit
   premailer-rails
   rack-cors
