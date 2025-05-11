@@ -8,7 +8,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'rails'
+gem 'rails', '>= 7.2.0'
 gem 'rails-i18n'
 gem 'i18n-js'
 gem 'activerecord-import'
@@ -100,7 +100,7 @@ gem 'starburst', github: 'thewca/starburst'
 gem 'react-rails'
 gem 'sprockets-rails'
 gem 'fuzzy-string-match'
-gem 'sidekiq'
+gem 'sidekiq', '>= 8.0.0'
 gem 'sidekiq-cron'
 
 group :development, :test do
