@@ -78,7 +78,7 @@ gem 'cocoon'
 gem 'momentjs-rails', github: 'derekprior/momentjs-rails'
 gem 'datetimepicker-rails', github: 'zpaulovics/datetimepicker-rails', submodules: true
 gem 'blocks'
-gem 'rack-cors', require: 'rack/cors'
+gem 'rack-cors', '>= 3.0.0', require: 'rack/cors'
 gem 'api-pagination'
 gem 'daemons'
 gem 'i18n-country-translations', github: 'thewca/i18n-country-translations'
