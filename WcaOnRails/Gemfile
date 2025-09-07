@@ -16,7 +16,7 @@ gem 'sass-rails'
 gem 'uglifier'
 gem 'faraday'
 gem 'faraday-retry'
-gem 'sdoc', group: :doc
+gem 'sdoc', '>= 2.6.2', group: :doc
 gem 'dotenv-rails', require: 'dotenv/rails-now'
 gem 'seedbank'
 gem 'jbuilder'
