@@ -57,7 +57,7 @@ gem 'selectize-rails', github: 'jfly/selectize-rails'
 
 gem 'high_voltage'
 gem 'carrierwave'
-gem 'carrierwave-aws'
+gem 'carrierwave-aws', '>= 1.6.1'
 gem 'aws-sdk-s3'
 gem 'aws-sdk-rds'
 gem 'aws-sdk-cloudfront'
