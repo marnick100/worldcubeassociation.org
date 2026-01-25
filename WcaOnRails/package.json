@@ -47,7 +47,7 @@
     "js-yaml": "^4.1.0",
     "leaflet": "^1.9.4",
     "leaflet-geosearch": "^3.9.0",
-    "lodash": "^4.17.21",
+    "lodash": "^4.17.23",
     "mini-css-extract-plugin": "^2.7.6",
     "path-complete-extname": "^1.0.0",
     "pnp-webpack-plugin": "^1.7.0",
